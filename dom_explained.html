@@ -14,12 +14,30 @@
   </nav>
   <div class="container">
     <h1>Understanding the DOM</h1>
-    <p>The <strong>Document Object Model (DOM)</strong> is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+    <p>The <strong>Document Object Model (DOM)</strong> is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM is essential for making web pages interactive and dynamic.</p>
     <ul>
-      <li>The DOM treats an HTML or XML document as a tree of objects.</li>
-      <li>Each element, attribute, and piece of text becomes a node.</li>
-      <li>JavaScript can access and modify any part of the DOM tree.</li>
+      <li><strong>Tree Structure:</strong> The DOM treats an HTML or XML document as a tree of objects called <em>nodes</em>. The top node is <code>document</code>, which contains <code>html</code>, <code>head</code>, <code>body</code>, and so on.</li>
+      <li><strong>Node Types:</strong> There are different types of nodes: <em>element nodes</em> (tags), <em>text nodes</em> (text inside elements), <em>attribute nodes</em> (attributes like class, id), and <em>comment nodes</em>.</li>
+      <li><strong>Accessing the DOM:</strong> JavaScript can access and modify any part of the DOM tree using methods like <code>getElementById</code>, <code>querySelector</code>, <code>createElement</code>, and more.</li>
+      <li><strong>Common Properties & Methods:</strong>
+        <ul>
+          <li><code>document.getElementById('id')</code> - Selects an element by its ID.</li>
+          <li><code>element.textContent</code> - Gets or sets the text inside an element.</li>
+          <li><code>element.classList.add('class')</code> - Adds a class to an element.</li>
+          <li><code>element.appendChild(child)</code> - Adds a child node to an element.</li>
+        </ul>
+      </li>
+      <li><strong>Live Updates:</strong> Changes made to the DOM with JavaScript are reflected instantly in the browser.</li>
     </ul>
+    <h2>Code Example</h2>
+    <pre>
+// Select an element
+const heading = document.querySelector('h1');
+// Change its text
+heading.textContent = 'New Title!';
+// Add a class
+heading.classList.add('highlight');
+    </pre>
     <h2>Visual Example</h2>
     <pre id="dom-tree">
 &lt;html&gt;
