@@ -1,0 +1,63 @@
+#dom-visual {
+  margin: 24px 0;
+  padding: 16px;
+  background: #f3f7fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.dom-node {
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  background: #e0eafc;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.dom-tag {
+  color: #1976d2;
+  font-weight: bold;
+}
+/* This file has been moved to the styles folder */
+body {
+  background: #f4f6f8;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+ul {
+  margin-bottom: 24px;
+}
+
+pre#dom-tree {
+  background: #e3eaf2;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#dom-demo {
+  background: #f9fafb;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 40px;
+  font-size: 15px;
+  color: #333;
+}
