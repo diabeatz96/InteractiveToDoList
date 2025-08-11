@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Object Model Explained</title>
+  <link rel="stylesheet" href="dom_explained.css">
+</head>
+<body>
+  <nav style="text-align:center; margin-bottom:20px;">
+    <a href="index.html">To-Do List</a> |
+    <a href="practice.html">Practice Page</a> |
+    <a href="dom_explained.html">DOM Explained</a>
+  </nav>
+  <div class="container">
+    <h1>Understanding the DOM</h1>
+    <p>The <strong>Document Object Model (DOM)</strong> is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+    <ul>
+      <li>The DOM treats an HTML or XML document as a tree of objects.</li>
+      <li>Each element, attribute, and piece of text becomes a node.</li>
+      <li>JavaScript can access and modify any part of the DOM tree.</li>
+    </ul>
+    <h2>Visual Example</h2>
+    <pre id="dom-tree">
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;h1&gt;Title&lt;/h1&gt;
+      &lt;p&gt;Paragraph&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <div id="dom-demo"></div>
+  </div>
+  <script src="dom_explained.js"></script>
+</body>
+</html>
