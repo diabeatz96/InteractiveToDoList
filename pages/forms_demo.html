@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Forms Demo</title>
+  <link rel="stylesheet" href="../styles/forms_demo.css">
+</head>
+<body>
+  <nav style="text-align:center; margin-bottom:20px;">
+    <a href="../index.html">To-Do List</a> |
+    <a href="practice.html">Practice Page</a> |
+    <a href="dom_explained.html">DOM Explained</a> |
+    <a href="forms_demo.html">Forms Demo</a>
+  </nav>
+  <div class="container">
+    <h1>Interactive Forms Demo</h1>
+    <form id="demo-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="favorite">Favorite Color:</label>
+      <input type="text" id="favorite" name="favorite">
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="form-output"></div>
+    <ul id="form-list"></ul>
+  </div>
+  <script src="../scripts/forms_demo.js"></script>
+</body>
+</html>
