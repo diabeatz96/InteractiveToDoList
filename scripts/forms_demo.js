@@ -38,6 +38,11 @@ function isSimpleEmail(email) {
   return atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 1;
 }
 
+function evenSimplerIsValidEmail(email) {
+    if (!email.includes('@')) return false;
+    return true;
+}
+
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent page reload
   output.textContent = '';
