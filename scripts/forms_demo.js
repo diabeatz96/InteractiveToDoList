@@ -76,3 +76,17 @@ form.addEventListener('submit', function(event) {
   // Clear form fields
   form.reset();
 });
+
+  // Live validation for name input (more than 3 characters)
+  nameInput.addEventListener('input', function() {
+    const name = nameInput.value.trim();
+    if (name.length > 3) {
+      nameInput.style.borderColor = '#388e3c'; // green
+      output.textContent = 'Name is valid!';
+      output.style.color = '#388e3c';
+    } else {
+      nameInput.style.borderColor = '#e53935'; // red
+      output.textContent = 'Name must be more than 3 characters.';
+      output.style.color = '#e53935';
+    }
+  });
